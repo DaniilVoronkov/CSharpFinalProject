@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PlayersDatabase" Class="LinqToSqlConnectionClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PlayersDatabase.mdf;Integrated Security=True" SettingsObjectName="FinalProject.Properties.Settings" SettingsPropertyName="PlayersDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.players_statistic" Member="players_statistics">
+    <Type Name="players_statistic">
+      <Column Name="player_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="player_first_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="player_last_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country_of_birth" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="player_age" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="goals_scored" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="assists_made" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="player_number" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="player_team" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="matches_played" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="position_on_field" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
