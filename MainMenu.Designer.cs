@@ -44,7 +44,7 @@ namespace FinalProject
             this.playersTable.Name = "playersTable";
             this.playersTable.Size = new System.Drawing.Size(545, 345);
             this.playersTable.TabIndex = 0;
-            this.playersTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.playersTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.playersTable_CellClick);
             // 
             // createButton
             // 
