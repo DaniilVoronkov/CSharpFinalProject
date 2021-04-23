@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace FinalProject
 {
@@ -126,10 +127,11 @@ namespace FinalProject
         //function that triggers when we press on the edit button
         private void editButton_Click(object sender, EventArgs e)
         {
-            /* EditForm edit = new EditForm(from rowForEdit in dataContext.players_statistics
+            ArrayList playerData = new ArrayList();
+         playerData.AddRange((from rowForEdit in dataContext.players_statistics
             where rowForEdit.player_id == playersTable.CurrentCell.RowIndex + 1
-                             select rowForEdit;); 
-            this.Hide();
+                             select rowForEdit).ToList()); 
+            /* this.Hide();
             edit.ShowDialog();
             this.Close(); */
         }
